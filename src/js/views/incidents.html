@@ -1,0 +1,27 @@
+<!--
+ Copyright (c) 2014, 2022, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding">
+  <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+     <div id="routing-container" class="oj-flex">
+       <div class="demo-navlist-container oj-flex-item oj-md-3 oj-sm-padding-5x-bottom oj-md-padding-5x-end">
+         <oj-navigation-list data="[[dataProvider]]" selection="{{selection.path}}">
+           <template slot="itemTemplate" data-oj-as="item">
+             <oj-bind-if test="[[item.data.detail]]">
+               <li :id="[[item.data.path]]">
+                 <a href="#">
+                   <oj-bind-text value="[[item.data.detail.label]]"></oj-bind-text>
+                 </a>
+               </li>
+             </oj-bind-if>
+           </template>
+         </oj-navigation-list>
+       </div>
+       <div id="pageContent" class="oj-panel oj-flex-item oj-md-9">
+         <oj-module config="[[childModule.koObservableConfig]]"></oj-module>
+       </div>
+     </div>
+   </div>
+ </div>

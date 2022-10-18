@@ -1,0 +1,20 @@
+[
+    {
+        "used_id": 1,
+        "username": "user",
+        "password": "dXNlcg==",
+        "userRole": "US"
+    },
+    {
+        "used_id": 2,
+        "username": "user2",
+        "password": "user2",
+        "userRole": "AD"
+    },
+    {
+        "used_id": 3,
+        "username": "user3",
+        "password": "user3",
+        "userRole": "US"
+    }
+]

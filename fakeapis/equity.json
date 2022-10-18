@@ -1,0 +1,54 @@
+{
+    "equityData": [
+        {
+            "instrument": "ADANIPORTS",
+            "userId": "test",
+            "qty": 25,
+            "avgCost": "700.63",
+            "ltp": "826.65",
+            "curVal": "20666.25",
+            "p&l": "3,150.45",
+            "netChg": "17.99%"
+        },
+        {
+            "instrument": "AMIORG",
+            "userId": "test",
+            "qty": 24,
+            "avgCost": "845.63",
+            "ltp": "886.5",
+            "curVal": "21276.00",
+            "p&l": "990.6",
+            "netChg": "4.88%"
+        },
+        {
+            "instrument": "ASIANPAINT",
+            "userId": "test",
+            "qty": 5,
+            "avgCost": "2890.00",
+            "ltp": "3,579.85",
+            "curVal": "17,899.25",
+            "p&l": "3,449.25",
+            "netChg": "4.88%"
+        },
+        {
+            "instrument": "ASTRAL",
+            "userId": "test",
+            "qty": 5,
+            "avgCost": "2890.00",
+            "ltp": "3,579.85",
+            "curVal": "17,899.25",
+            "p&l": "3,449.25",
+            "netChg": "4.88%"
+        },
+        {
+            "instrument": "DIXON",
+            "userId": "test",
+            "qty": 5,
+            "avgCost": "2890.00",
+            "ltp": "3,579.85",
+            "curVal": "17,899.25",
+            "p&l": "3,449.25",
+            "netChg": "4.88%"
+        }
+    ]
+}

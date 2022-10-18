@@ -1,0 +1,121 @@
+<!--
+ Copyright (c) 2014, 2022, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <style>
+  .oj-popup-content {
+    padding: 35px;;
+  }
+
+  #registration {
+    width: 45% !important;
+  }
+  #forgotPasswordDetail {
+    width: 45% !important;
+
+  }
+</style>
+<div class="oj-hybrid-padding">
+ <div id="sampleDemo" class="demo-padding demo-container">
+   <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+     <div id="container">
+       <div class="oj-flex demo-flex-display">
+         <div class="oj-flex-item">
+           <h2 class="title">
+             Wealth Manager
+           </h2>
+           <div class="oj-flex">
+             <div class="oj-flex-item oj-md-7">
+               2a
+             </div>
+             <div class="oj-flex-item oj-md-5">
+              <oj-validation-group id="tracker" valid="{{groupValid}}">
+               <oj-form-layout direction="row">
+                 <!-- <div></div> -->
+                 <div>
+                     <oj-input-text id="username-input" value={{username}} label-hint="User Name" required validators="[[emailPatternValidator]]"></oj-input-text>
+                     <oj-input-password id="password-input" value="{{password}}" label-hint="Passwords" required ></oj-input-password>
+                     <div class="oj-flex oj-sm-margin-2x oj-sm-align-items-center">
+                         <div class="oj-flex-item">
+                             <oj-button id="login-button" on-oj-action="[[loginButton]]">
+                                 Sign In
+                             </oj-button>
+                         </div>
+                         <div class="oj-flex-item">
+                             <oj-button id="forgotButton" on-oj-action="[[forgotButton]]">
+                                 Forgot Password
+                             </oj-button>
+                         </div>
+                         
+                         <div class="oj-flex-item">
+                             <oj-button id="registerButton" on-oj-action="[[registerButton]]">
+                                 Register
+                             </oj-button>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- <div></div> -->
+                </oj-validation-group>
+                </oj-form-layout>
+                
+             <oj-popup id="forgotPasswordDetail" auto-dismiss="none" modality="modal" position.my.horizontal="center"
+    position.my.vertical="center" position.at.horizontal="center" position.at.vertical="center" position.of="window"
+    tail="none">
+    <oj-form-layout direction="row" max-columns="3">
+        <div></div>
+        <div>
+            <h3>Forgot Password</h3>
+            <oj-button id="btnCancel" class="oj-button-sm cancel-btn" display="icons" on-oj-action="[[forgotPwdCancelListener]]">
+                <span slot="startIcon" class="oj-ux-ico-close"></span>
+                Cancel
+            </oj-button>
+            <oj-input-text id="register-username" value={{registerUserName}} label-hint="UserId(PAN Card)">
+            </oj-input-text>
+            <oj-input-password id="new-password" value={{newPassword}} label-hint="New Password">
+            </oj-input-password>
+            <oj-input-password id="confirm-password" value={{confirmPassword}} label-hint="Confirm New Password">
+            </oj-input-password>
+
+            <oj-button id="change-pwd-button" on-oj-action="[[changePwdButton]]">
+                Submit
+            </oj-button>
+        </div>
+    </oj-form-layout>
+</oj-popup>
+
+<oj-popup id="registration" auto-dismiss="none" modality="modal" position.my.horizontal="center"
+    position.my.vertical="center" position.at.horizontal="center" position.at.vertical="center" position.of="window"
+    tail="none">
+    <oj-form-layout direction="row" max-columns="3">
+        <div></div>
+        <div>
+            <h3>Registration Page</h3>
+            <oj-button id="btnCancel" class="oj-button-sm cancel-btn" display="icons" on-oj-action="[[cancelListener]]">
+                <span slot="startIcon" class="oj-ux-ico-close"></span>
+                Cancel
+            </oj-button>
+            <oj-input-text id="register-username" value={{registerUserName}} label-hint="UserId(PAN Card)">
+            </oj-input-text>
+            <oj-input-text id="register-username" value={{registerUserName}} label-hint="UserName">
+            </oj-input-text>
+            <oj-input-password id="register-password" value={{registerPassword}} 
+                mask-icon="visible" label-hint="Password"></oj-input-password>
+            <oj-button id="submit-button" on-oj-action="[[submitButton]]">
+                Submit
+            </oj-button>
+        </div>
+    </oj-form-layout>
+</oj-popup>
+             </div>
+           </div>
+         </div>
+       </div>
+
+
+
+     </div>
+   </div>
+ </div></div>
+
+ <!-- </div> -->
